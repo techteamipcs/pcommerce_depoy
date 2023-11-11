@@ -1,0 +1,73 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+// Font 1
+
+@font-face {
+  font-family: 'CrimsonText-Regular';
+  src:url('../../fonts/crimson_text/CrimsonText-Regular.ttf')format('truetype');
+  font-display: swap;  
+}
+@font-face {
+  font-family: 'CrimsonText-SemiBold';
+  src: url('../../fonts/crimson_text/CrimsonText-SemiBold.ttf')format('truetype');
+  font-display: swap; 
+}
+@font-face {
+  font-family: 'CrimsonText-Bold';
+  src: url('../../fonts/crimson_text/CrimsonText-Bold.ttf')format('truetype'); 
+  font-display: swap;
+}
+
+// Font 2
+@font-face {
+  font-family: 'Jost-Thin';
+  src:url('../../fonts/jost/static/Jost-Thin.ttf')format('truetype');
+  font-display: swap;  
+}
+@font-face {
+  font-family: 'Jost-Light';
+  src:url('../../fonts/jost/static/Jost-Light.ttf')format('truetype');
+  font-display: swap;  
+}
+
+@font-face {
+  font-family: 'Jost-ExtraLight';
+  src:url('../../fonts/jost/static/Jost-ExtraLight.ttf')format('truetype');
+  font-display: swap;  
+}
+
+@font-face {
+  font-family: 'Jost-Regular';
+  src:url('../../fonts/jost/static/Jost-Regular.ttf')format('truetype');
+  font-display: swap;  
+}
+@font-face {
+  font-family: 'Jost-Medium';
+  src:url('../../fonts/jost/static/Jost-Medium.ttf')format('truetype');
+  font-display: swap;  
+}
+@font-face {
+  font-family: 'Jost-SemiBold';
+  src:url('../../fonts/jost/static/Jost-SemiBold.ttf')format('truetype');
+  font-display: swap;  
+}
+@font-face {
+  font-family: 'Jost-Bold';
+  src:url('../../fonts/jost/static/Jost-Bold.ttf')format('truetype');
+  font-display: swap;  
+}
+
+
+$font-CrimsonText-regular:'CrimsonText-Regular';
+$font-CrimsonText-semibold:'CrimsonText-SemiBold';
+$font-CrimsonText-bold:'CrimsonText-Bold';
+
+
+$font-jost-regular:'Jost-Regular';
+$font-jost-medium:'Jost-Medium';
+$font-jost-semibold:'Jost-SemiBold';
+$font-jost-bold:'Jost-Bold';
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/

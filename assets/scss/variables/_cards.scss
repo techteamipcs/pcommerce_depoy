@@ -1,0 +1,50 @@
+@mixin card($noborder: none) {
+	border: $noborder;
+	box-shadow: 0px 6px 12px #00000029;
+	text-align: center;
+	.heartbox {
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		.fa-heart {
+			display: block;
+			z-index: 0;
+      border-color: #9F9F9F;
+		}
+		// .fas.fa-heart {
+		// 	display: none;
+		// 	z-index: 0;
+		// }
+		&:hover {
+			.fas.fa-heart {
+				display: block;
+				color: #ff4470;
+			}
+			// .fa-heart {
+			// 	display: none;
+			// }
+		}
+	}
+	.card-body {
+		p {
+			color: $defaultColor;
+		}
+		.card-title {
+			font-family: $font-CrimsonText-regular;
+			color: $defaultColor;
+			font-size: 18px;
+      font-weight: initial;
+      padding: 0px 20px;
+			@media (max-width: 991px) {
+				font-size: 16px;
+			}
+			@media (max-width: 575px) {
+				font-size: 14px;
+			}
+		}
+    .card-text{
+      font-size: 14px;
+    }
+	}
+}
