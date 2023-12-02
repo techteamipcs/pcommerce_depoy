@@ -1,18 +1,33 @@
-@mixin shadow($shadow:none){
-outline: $shadow;
-box-shadow: $shadow;
-border: 2px solid #d8d8d8;
-background: $white;
-height: 38px;
-border-radius: 0;
-&:hover{
-  border-color: $formtextboxactive;
+@mixin shadow($shadow: none) {
+	outline: $shadow;
+	box-shadow: $shadow;
+	border: 2px solid #d8d8d8;
+	background: $white;
+	height: 38px;
+	border-radius: 0;
+	&:hover {
+		border-color: $formtextboxactive;
+	}
+	&:focus {
+		border-color: $formtextboxactive;
+	}
 }
-&:focus{
-  border-color: $formtextboxactive;
+textarea,
+.form-control,
+input {
+	@include shadow(none);
 }
-}
-textarea, .form-control,
-input{
-@include shadow(none);
+@mixin bottomborder($shadow: none) {
+  background: transparent;
+	border: none;
+	border-bottom: 1px solid #d8d8d8;
+	height: 38px;
+	border-radius: 0;
+  color: #fff;
+	&:hover {
+		border-color: $formtextboxactive;
+	}
+	&:focus {
+		border-color: $formtextboxactive;
+	}
 }

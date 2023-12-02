@@ -7,6 +7,7 @@
   font-size: 12px;
   text-transform: uppercase;
   border-radius: 0;
+  text-align: center;
   @if $color== default{
     width:300px;
     color:$menuactiveColor;
@@ -36,10 +37,11 @@
    padding: 16px 10px !important;
     background-color: $white;
     border: 2px solid $white;
-    color: #09363C;
+    color: $defaultColor;
     &:hover, &:focus{
       background-color: $defaultColor;
       color: $menuactiveColor;
+      border-color: $defaultColor;
     }
   }
   @if $color== formbutton{
@@ -60,6 +62,14 @@
     letter-spacing: 0;
     color: $formSubheadLabelColor;
     border-bottom: 1px solid $formSubheadLabelColor;
+  }
+  @if $color== btnwhite{
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: #fff; 
+    &:hover, &:focus{
+      color: #fff;
+    }
   }
 }
 @mixin exppost($color:#003A40){
