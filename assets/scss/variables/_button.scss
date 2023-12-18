@@ -13,7 +13,7 @@
     color:$menuactiveColor;
     background-color: $defaultColor;
     border-color: $defaultColor; 
-    border: 2px solid $defaultColor;
+    border: 1.5px solid $defaultColor;
     padding: 14px 15px !important;
     &:hover,&:focus{
       background-color: transparent;
@@ -25,7 +25,7 @@
     width: 300px;
     background-color: transparent;
     color:$defaultColor;
-    border: 2px solid $defaultColor;
+    border: 1.5px solid $defaultColor;
     padding: 14px 15px !important;
     &:hover, &:focus{
       background-color: $defaultColor;
@@ -36,7 +36,7 @@
     width: 157px;
    padding: 16px 10px !important;
     background-color: $white;
-    border: 2px solid $white;
+    border: 1.5px solid $white;
     color: $defaultColor;
     &:hover, &:focus{
       background-color: $defaultColor;
@@ -48,7 +48,7 @@
     // width: 157px;
    padding: 16px 10px !important;
     background-color: $formButtonbg;
-    border: 2px solid $formButtoncolor;
+    border: 1.5px solid $formButtoncolor;
     color: $formSubheadLabelColor;
     border-radius: 0;
     text-transform: uppercase;
@@ -62,6 +62,10 @@
     letter-spacing: 0;
     color: $formSubheadLabelColor;
     border-bottom: 1px solid $formSubheadLabelColor;
+    &:hover, &:focus{
+      color: $menuactiveColor;
+      border-color: $defaultColor;
+    }
   }
   @if $color== btnwhite{
     text-transform: uppercase;
