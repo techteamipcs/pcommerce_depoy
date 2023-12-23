@@ -1,0 +1,64 @@
+// $defaultheadingFontSize: 48px;
+// @mixin font-size-48 {
+//   font-size: 48px;
+// }
+$fontlight: 300;
+$fontregular: 400;
+$fontmedium: 500;
+$fontsemibold: 600;
+$fontbold: 700;
+$fontextrabold: 800;
+$text-color: #06bbe3;
+$text-grey:#828282;
+
+$defaultFontSize: 48px;
+$media: (
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+    2xl: 1536px,
+    3xl: 1920px,
+);
+$baseSize:6px;
+@mixin md($baseSize, $breakpoint) {
+  @each $breakpoints in $media {
+      // @if $breakpoint==$breakpoints {
+          @media screen and (min-width: $breakpoints) {
+             
+              font-size: $baseSize * (1 - (length($media) - index($media, $breakpoints)) * 0.1);
+          }
+      // }
+  }
+}
+// Define a mixin to calculate responsive font size based on a base font size and breakpoints
+// @mixin responsiveFontSize($baseSize, $breakpoints) {
+//   @each $breakpoint in $breakpoints {
+//     @media (#{$breakpoint} ){
+//       font-size: $baseSize * (1 - (length($breakpoints) - index($breakpoints, $breakpoint)) * 0.1);
+//     }
+//   }
+// }
+
+// Usage example
+// .my-element {
+//   font-size: $defaultFontSize;
+//   @include responsiveFontSize($defaultFontSize, (
+//     (max-width: 768px),
+//     (max-width: 992px),
+//     (max-width: 1200px)
+//   ));
+// }
+
+
+@function makelongshadow($color) {
+  $val: 0px 0px $color;
+  @for $i from 1 through 200 {
+    $val: #{$val}, #{$i}px #{$i}px #{$color};
+  }
+  @return $val;
+}
+@mixin longshadow($color) {
+  text-shadow: makelongshadow($color);
+}
+
