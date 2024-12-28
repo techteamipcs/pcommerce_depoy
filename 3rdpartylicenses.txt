@@ -172,6 +172,18 @@ MIT
 ngx-bootstrap/collapse
 MIT
 
+ngx-bootstrap/component-loader
+MIT
+
+ngx-bootstrap/positioning
+MIT
+
+ngx-bootstrap/tooltip
+MIT
+
+ngx-bootstrap/utils
+MIT
+
 ngx-captcha
 MIT
 
